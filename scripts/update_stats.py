@@ -1,10 +1,13 @@
-"""Draw the live Ghost Bus card (assets/ghostbus-live.svg) from the project's published data."""
+"""Draw the live Ghost Bus high-score board (assets/ghostbus-live.svg) from the project's published data."""
 import json
+import os
 import urllib.request
 from datetime import datetime
-from html import escape
+
+from pixel import CYAN, GOLD, PINK, SOFT, crt, svg
 
 BASE = "https://raw.githubusercontent.com/Mohammed-890/ghost-bus/main/docs/data/"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "ghostbus-live.svg")
 
 
 def get(name):
@@ -15,57 +18,58 @@ def get(name):
         return None
 
 
-def fmt(n):
-    return "–" if n is None else f"{n:,}"
-
-
 def when(iso):
     try:
-        return datetime.fromisoformat(iso).strftime("%-d %b, %H:%M")
+        return datetime.fromisoformat(iso).strftime("%-d %b %H:%M").upper()
     except (TypeError, ValueError):
         return ""
 
 
 def card(s, daily, live):
-    h = (s or {}).get("health") or {}
+    h = s.get("health") or {}
     buses = len(live["buses"]) if live and live.get("buses") else h.get("median_buses")
-    stats = [
-        (fmt(buses), "buses on the road", "at " + when(live["at"]) if live else ""),
-        (fmt((s or {}).get("judged")), "trips checked", (lambda n: f"{n} day{'s' if n != 1 else ''} of data")((s or {}).get('days', 0))),
-        (fmt((s or {}).get("ghosts")), "never came", f"{(s or {}).get('ghost_rate', 0) * 100:.1f}% of checked trips" if s and s.get("ghost_rate") is not None else ""),
+    rows = [
+        ("BUSES DRIVING NOW", buses, CYAN),
+        ("TRIPS CHECKED", s.get("judged"), "#fff"),
+        ("GHOST BUSES FOUND", s.get("ghosts"), PINK),
+        ("DAYS RUNNING", s.get("days"), GOLD),
     ]
-    # bars: trips checked per day, ghosts highlighted
-    days = (daily or [])[-14:]
-    bars, peak = [], max([d["judged"] for d in days] + [1])
-    x0, w, gap, base, hmax = 620, 34, 10, 190, 110
+    W, H = 1280, 360
+    lines = []
+    for i, (name, val, col) in enumerate(rows):
+        y = 128 + i * 48
+        v = "-" if val is None else f"{int(val):06d}"
+        lines.append(f'<text x="60" y="{y}" class="p" font-size="13" fill="{SOFT}">{("1ST", "2ND", "3RD", "4TH")[i]}</text>'
+                     f'<text x="130" y="{y}" class="p" font-size="17" fill="{col}">{name}</text>'
+                     f'<text x="600" y="{y}" class="p" font-size="17" fill="{col}" text-anchor="end">{v}</text>')
+    days = (daily or [])[-12:]
+    peak = max([d["judged"] for d in days] + [1])
+    x0, bw, gap, base, hmax = 700, 34, 12, 290, 140
+    bars = []
     for i, d in enumerate(days):
-        x = x0 + i * (w + gap)
-        hj = max(3, d["judged"] / peak * hmax)
-        hg = max(3 if d["ghosts"] else 0, d["ghosts"] / peak * hmax)
-        label = datetime.fromisoformat(d["service_date"]).strftime("%-d %b")
-        bars.append(f'<rect x="{x}" y="{base - hj:.1f}" width="{w}" height="{hj:.1f}" rx="4" fill="#b49cff" fill-opacity=".35"/>'
-                    f'<rect x="{x}" y="{base - hg:.1f}" width="{w}" height="{hg:.1f}" rx="4" fill="#ff8a3d"/>'
-                    f'<text x="{x + w / 2}" y="{base + 18}" text-anchor="middle" font-size="11" fill="#a6abc8">{escape(label)}</text>')
-    if not bars:
-        bars.append(f'<text x="{x0}" y="{base - 40}" font-size="14" fill="#a6abc8">Daily results appear here as days are judged.</text>')
-    cols = "".join(
-        f'<g transform="translate({40 + i * 190} 0)"><text y="120" font-size="38" font-weight="800" fill="#fff">{escape(a)}</text>'
-        f'<text y="146" font-size="14" font-weight="600" fill="#d6d9ec">{escape(b)}</text>'
-        f'<text y="166" font-size="12" fill="#a6abc8">{escape(c)}</text></g>'
-        for i, (a, b, c) in enumerate(stats))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-label="Ghost Bus Detector live statistics">
-  <rect width="1280" height="240" rx="18" fill="#110e30"/>
-  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
-    <circle cx="48" cy="46" r="6" fill="#7fe3b8"><animate attributeName="r" values="5;9;5" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
-    <text x="64" y="51" font-size="15" font-weight="700" fill="#7fe3b8">LIVE</text>
-    <text x="112" y="51" font-size="15" font-weight="700" fill="#fff">Ghost Bus Detector · Sheffield</text>
-    <text x="620" y="51" font-size="13" fill="#a6abc8">Trips checked per day · <tspan fill="#ff8a3d" font-weight="700">ghost buses</tspan></text>
-    {cols}
-    {''.join(bars)}
-    <text x="1240" y="225" text-anchor="end" font-size="11" fill="#6f7494">Redrawn automatically from live data · {escape(when((s or {}).get("updated", "")))}</text>
-  </g>
-</svg>
-'''
+        x = x0 + i * (bw + gap)
+        nj = max(1, round(d["judged"] / peak * hmax / 10))
+        ng = max(1 if d["ghosts"] else 0, round(d["ghosts"] / peak * hmax / 10))
+        for k in range(nj):  # stacked pixel blocks, ghosts on top in pink
+            col = PINK if k >= nj - ng else "#7b5cff"
+            bars.append(f'<rect x="{x}" y="{base - (k + 1) * 10}" width="{bw}" height="8" fill="{col}"/>')
+        bars.append(f'<text x="{x + bw / 2}" y="{base + 22}" class="p" font-size="9" fill="{SOFT}" text-anchor="middle">'
+                    f'{datetime.fromisoformat(d["service_date"]).strftime("%d/%m")}</text>')
+    if not days:
+        bars.append(f'<text x="{x0}" y="200" class="p" font-size="12" fill="{SOFT}">FIRST DAY LOADING...</text>')
+    body = f'''<rect width="{W}" height="{H}" rx="18" fill="#160a33"/>
+<text x="60" y="58" class="p" font-size="24" fill="#fff">HIGH SCORES</text>
+<circle cx="374" cy="49" r="7" fill="#3dff8a"><animate attributeName="opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/></circle>
+<text x="390" y="57" class="p" font-size="14" fill="#3dff8a">LIVE</text>
+<text x="60" y="86" class="s" font-size="16" fill="{SOFT}">Ghost Bus Detector, watching every bus in Sheffield. This board redraws itself from live data.</text>
+{''.join(lines)}
+<text x="{x0}" y="128" class="p" font-size="13" fill="#fff">TRIPS PER DAY</text>
+<rect x="{x0 + 220}" y="119" width="12" height="8" fill="#7b5cff"/><text x="{x0 + 238}" y="128" class="p" font-size="10" fill="{SOFT}">RAN</text>
+<rect x="{x0 + 290}" y="119" width="12" height="8" fill="{PINK}"/><text x="{x0 + 308}" y="128" class="p" font-size="10" fill="{SOFT}">GHOST</text>
+{''.join(bars)}
+<text x="1230" y="340" class="p" font-size="10" fill="#6f6a94" text-anchor="end">UPDATED {when(s.get("updated", ""))} UTC</text>
+{crt(W, H, 18)}'''
+    return svg(W, H, body, f"Ghost Bus live: {buses} buses on the road, {s.get('judged')} trips checked, {s.get('ghosts')} ghost buses found.")
 
 
 def main():
@@ -73,11 +77,10 @@ def main():
     if not s:
         print("no data")
         return
-    svg = card(s, daily, live)
-    path = "assets/ghostbus-live.svg"
-    old = open(path).read() if __import__("os").path.exists(path) else ""
-    if svg != old:
-        open(path, "w").write(svg)
+    out = card(s, daily, live)
+    old = open(OUT).read() if os.path.exists(OUT) else ""
+    if out != old:
+        open(OUT, "w").write(out)
         print("card updated")
 
 

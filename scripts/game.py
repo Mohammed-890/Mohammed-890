@@ -94,7 +94,7 @@ def badge(label, color, answer, pid):
 
 def section(st):
     p = st["puzzle"]
-    lines = [START, "## Play: did this bus turn up?", ""]
+    lines = [START, "## Bonus stage: did this bus turn up?", ""]
     if not p:
         lines += ["The game starts once Ghost Bus Detector has judged its first full day. Check back tomorrow.", END]
         return "\n".join(lines)

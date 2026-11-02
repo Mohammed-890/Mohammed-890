@@ -1,66 +1,36 @@
-<p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Mohammed Banabilh. Machine learning and MLOps engineer.">
-</p>
+<a href="https://mohammed-890.github.io/"><img src="assets/arcade/title.svg" width="100%" alt="Mohammed Banabilh, AI and machine learning engineer"></a>
 
 <p align="center">
+  <a href="https://mohammed-890.github.io/"><img src="https://img.shields.io/badge/Play_my_projects-live-ff3fa4?style=for-the-badge&logo=githubpages&logoColor=white" alt="Play my projects live"></a>
   <a href="https://www.linkedin.com/in/mohammed-banabilh-6340553b0/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:banabilh19@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-b49cff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://mohammed-890.github.io/"><img src="https://img.shields.io/badge/Try%20my%20projects-live%20demos-ff6b2c?style=for-the-badge&logo=githubpages&logoColor=white" alt="Interactive portfolio with live demos"></a>
+  <a href="mailto:banabilh19@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-ffe14d?style=for-the-badge&logo=gmail&logoColor=black" alt="Email"></a>
 </p>
 
-Final-year **Computer Science with AI** student at Sheffield Hallam University, graduating in 2027. I build machine learning systems end to end: collecting the data, training and testing the model honestly, and running it in production with monitoring and automatic retraining. I speak **Arabic and English** and build AI tools for both.
+Final-year **Computer Science with AI** student at Sheffield Hallam University (graduating 2027). I build machine learning systems end to end, from collecting the data to running the model in production with monitoring and automatic retraining, and I build AI tools that work in **Arabic and English**.
 
-**Open to** ML engineering and MLOps internships now, and graduate roles from July 2027.
+## Select a game
 
-> **Try them live:** [mohammed-890.github.io](https://mohammed-890.github.io) has an interactive map of everything here, and you can use the Nahem chatbot and Show Me right on the page.
-
-## Featured projects
-
-<sub>Click a card to try it or read the code.</sub>
+<sub>Every cartridge is a real project. Click one to play the demo or read the code.</sub>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<a href="https://mohammed-890.github.io/nahem-chatbot/"><img src="assets/cards/nahem.png" alt="Nahem Assistant"></a>
-<br><b><a href="https://mohammed-890.github.io/nahem-chatbot/">Live demo with guided tour</a></b> · <a href="https://github.com/Mohammed-890/nahem-chatbot">Code</a>
-<br><sub>JavaScript · Arabic NLP · Google Apps Script · Gemini</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://mohammed-890.github.io/show-me/"><img src="assets/cards/show-me.png" alt="Show Me"></a>
-<br><b><a href="https://mohammed-890.github.io/show-me/">Live demo</a></b> · <a href="https://github.com/Mohammed-890/show-me">Code</a>
-<br><sub>JavaScript · OCR (Tesseract) · runs fully in the browser</sub>
-</td>
+<td width="50%"><a href="https://mohammed-890.github.io/nahem-chatbot/"><img src="assets/arcade/nahem.svg" width="100%" alt="Nahem: Arabic ordering chatbot, play the demo"></a></td>
+<td width="50%"><a href="https://mohammed-890.github.io/show-me/"><img src="assets/arcade/show-me.svg" width="100%" alt="Show Me: Arabic text to English, play the demo"></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<a href="https://github.com/Mohammed-890/seat-scout"><img src="assets/cards/seat-scout.png" alt="Seat Scout"></a>
-<br><b><a href="https://github.com/Mohammed-890/seat-scout">Code and screenshots</a></b>
-<br><sub>TypeScript · Node.js · Claude API tool use · Three.js · Playwright</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/Mohammed-890/football-butterfly-effect"><img src="assets/cards/football.png" alt="Football Butterfly Effect"></a>
-<br><b><a href="https://github.com/Mohammed-890/football-butterfly-effect/blob/main/docs/demo.mp4">51-second demo video</a></b> · <a href="https://github.com/Mohammed-890/football-butterfly-effect">Code</a>
-<br><sub>Python · NumPy · Elo + Poisson model · Monte Carlo · FastAPI</sub>
-</td>
+<td width="50%"><a href="https://github.com/Mohammed-890/seat-scout"><img src="assets/arcade/seat-scout.svg" width="100%" alt="Seat Scout: AI agent that finds the best stadium seat"></a></td>
+<td width="50%"><a href="https://github.com/Mohammed-890/football-butterfly-effect/blob/main/docs/demo.mp4"><img src="assets/arcade/football.svg" width="100%" alt="Football Butterfly Effect: watch the demo"></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<a href="https://github.com/Mohammed-890/worldcup-data-chat"><img src="assets/cards/worldcup.png" alt="World Cup Data Chat"></a>
-<br><b><a href="https://github.com/Mohammed-890/worldcup-data-chat">Code</a></b>
-<br><sub>Python · SQLite · LLM text-to-SQL · Streamlit</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/Mohammed-890/ghost-bus"><img src="assets/cards/ghost-bus.png" alt="Ghost Bus Detector"></a>
-<br><b><a href="https://mohammed-890.github.io/ghost-bus/">Live site</a></b> · <a href="https://github.com/Mohammed-890/ghost-bus">Code</a>
-<br><sub>Python · scikit-learn · MLflow · FastAPI · Kubernetes · Terraform · Argo CD</sub>
-</td>
+<td width="50%"><a href="https://github.com/Mohammed-890/worldcup-data-chat"><img src="assets/arcade/worldcup.svg" width="100%" alt="World Cup Data Chat: plain English to SQL"></a></td>
+<td width="50%"><a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/arcade/ghost-bus.svg" width="100%" alt="Ghost Bus Detector: live site"></a></td>
 </tr>
 </table>
 
-<a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/ghostbus-live.svg" alt="Ghost Bus Detector live statistics" width="100%"></a>
+<a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/ghostbus-live.svg" width="100%" alt="Ghost Bus Detector live high scores"></a>
 
 <!-- game:start -->
-## Play: did this bus turn up?
+## Bonus stage: did this bus turn up?
 
 Every day this asks about a **real departure** from Sheffield, checked by [Ghost Bus Detector](https://github.com/Mohammed-890/ghost-bus) against live GPS.
 
@@ -74,8 +44,10 @@ Did a bus actually run it?
 <sub>0 guesses today · 0 guesses in total</sub>
 <!-- game:end -->
 
+<img src="assets/arcade/inventory.svg" width="100%" alt="Tools: Python, scikit-learn, pandas, MLflow, FastAPI, Docker, Kubernetes, Helm, Terraform, Argo CD, Prometheus, GitHub Actions, TypeScript, SQL, Java, Three.js">
+
 <details>
-<summary><b>How Ghost Bus works</b>, with live numbers (click to open)</summary>
+<summary><b>Player manual: how Ghost Bus works</b></summary>
 <br>
 
 
@@ -103,7 +75,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>More projects</b></summary>
+<summary><b>Secret levels: more projects</b></summary>
 <br>
 
 | Project | What it is |
@@ -115,29 +87,17 @@ flowchart LR
 
 </details>
 
-## Tools I use
+<details>
+<summary><b>House rules: how I work</b></summary>
+<br>
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
-  <img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" alt="Helm">
-  <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
-  <img src="https://img.shields.io/badge/Argo%20CD-EF7B4D?style=flat-square&logo=argo&logoColor=white" alt="Argo CD">
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-</p>
-
-## How I work
 
 - **Every model gets a baseline.** If it can't beat a simple rule, it isn't ready.
 - **Results are measured on data the model hasn't seen**, and each project says what it can't do.
 - **If it isn't tested, it isn't done.** Evaluation sets, regression tests and end-to-end tests on every project.
+
+</details>
+
+<a href="https://www.linkedin.com/in/mohammed-banabilh-6340553b0/"><img src="assets/arcade/continue.svg" width="100%" alt="Continue? Open to ML engineering and MLOps internships, and graduate roles from July 2027"></a>
+
+<sub>Pixel font: Press Start 2P (SIL Open Font License).</sub>
