@@ -1,0 +1,20 @@
+{
+ "puzzle": {
+  "id": "9e8f2a",
+  "day": "2026-11-01",
+  "route": "115",
+  "operator": "First South Yorkshire",
+  "time": "23:38",
+  "from": "Ridgeway/Herringthorpe Valley Road",
+  "to": "Rotherham Interchange/C4",
+  "check": "6f33d0d819fc54ca",
+  "answer": null,
+  "plays": 0,
+  "correct": 0,
+  "ghosts_that_day": 1,
+  "judged_that_day": 666
+ },
+ "previous": null,
+ "plays": 0,
+ "correct": 0
+}

@@ -57,20 +57,27 @@ Final-year **Computer Science with AI** student at Sheffield Hallam University, 
 </tr>
 </table>
 
+<a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/ghostbus-live.svg" alt="Ghost Bus Detector live statistics" width="100%"></a>
+
+<!-- game:start -->
+## Play: did this bus turn up?
+
+Every day this asks about a **real departure** from Sheffield, checked by [Ghost Bus Detector](https://github.com/Mohammed-890/ghost-bus) against live GPS.
+
+> **Route 115** (First South Yorkshire), **23:38** on **Sunday 1 November**
+> from Ridgeway/Herringthorpe Valley Road to Rotherham Interchange/C4
+
+Did a bus actually run it?
+
+<p align="left"><a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3A9e8f2a%3Aran&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20ran-1aa38c?style=for-the-badge" alt="It ran"></a> &nbsp; <a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3A9e8f2a%3Aghost&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20never%20came-7b5cff?style=for-the-badge" alt="It never came"></a></p>
+
+<sub>0 guesses today · 0 guesses in total</sub>
+<!-- game:end -->
+
 <details>
 <summary><b>How Ghost Bus works</b>, with live numbers (click to open)</summary>
 <br>
 
-<!-- ghostbus:start -->
-| Ghost Bus, live from Sheffield | |
-|---|---|
-| Trips judged | **666** |
-| Ghost buses found | **1 (0.1%)** |
-| Last 7 days | **1 of 666 trips never came** |
-| Days collected | **1 (since 1 Nov 2026)** |
-
-<sub>Updated automatically every day from the project's live data · last update 2 Nov 2026</sub>
-<!-- ghostbus:end -->
 
 Every bus in England reports its GPS position to the government's Bus Open Data Service. Ghost Bus compares that with the timetable, trip by trip, to find the buses that never came, then predicts which departures are likely to be missed. A trip only counts as a ghost when the live feed and the operator were reporting reliably.
 
