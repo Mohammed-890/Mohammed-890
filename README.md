@@ -19,7 +19,7 @@ Final-year **Computer Science with AI** student at Sheffield Hallam University, 
 |---|---|
 | Status | **Collecting live data. The first results appear after a full day is judged.** |
 
-<sub>Updated automatically every day from the project's live data</sub>
+<sub>Updated automatically every day from the project's live data · last update 1 Nov 2026</sub>
 <!-- ghostbus:end -->
 
 ## Featured projects
