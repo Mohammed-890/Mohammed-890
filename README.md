@@ -5,22 +5,14 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/mohammed-banabilh-6340553b0/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:banabilh19@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-b49cff?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://mohammed-890.github.io/ghost-bus/"><img src="https://img.shields.io/badge/Live-Ghost%20Bus-1d2340?style=for-the-badge&logo=githubpages&logoColor=white" alt="Ghost Bus live site"></a>
+  <a href="https://mohammed-890.github.io/"><img src="https://img.shields.io/badge/Try%20my%20projects-live%20demos-ff6b2c?style=for-the-badge&logo=githubpages&logoColor=white" alt="Interactive portfolio with live demos"></a>
 </p>
 
 Final-year **Computer Science with AI** student at Sheffield Hallam University, graduating in 2027. I build machine learning systems end to end: collecting the data, training and testing the model honestly, and running it in production with monitoring and automatic retraining. I speak **Arabic and English** and build AI tools for both.
 
 **Open to** ML engineering and MLOps internships now, and graduate roles from July 2027.
 
-### Right now
-
-<!-- ghostbus:start -->
-| Ghost Bus, live from Sheffield | |
-|---|---|
-| Status | **Collecting live data. The first results appear after a full day is judged.** |
-
-<sub>Updated automatically every day from the project's live data · last update 1 Nov 2026</sub>
-<!-- ghostbus:end -->
+> **Try them live:** [mohammed-890.github.io](https://mohammed-890.github.io) has an interactive map of everything here, and you can use the Nahem chatbot and Show Me right on the page.
 
 ## Featured projects
 
@@ -29,45 +21,56 @@ Final-year **Computer Science with AI** student at Sheffield Hallam University, 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/Mohammed-890/ghost-bus"><img src="assets/cards/ghost-bus.png" alt="Ghost Bus Detector"></a>
-<br><b><a href="https://mohammed-890.github.io/ghost-bus/">Live site</a></b> · <a href="https://github.com/Mohammed-890/ghost-bus">Code</a>
-<br><sub>Python · scikit-learn · MLflow · FastAPI · Kubernetes · Terraform · Argo CD</sub>
-</td>
-<td width="50%" valign="top">
 <a href="https://mohammed-890.github.io/nahem-chatbot/"><img src="assets/cards/nahem.png" alt="Nahem Assistant"></a>
 <br><b><a href="https://mohammed-890.github.io/nahem-chatbot/">Live demo with guided tour</a></b> · <a href="https://github.com/Mohammed-890/nahem-chatbot">Code</a>
 <br><sub>JavaScript · Arabic NLP · Google Apps Script · Gemini</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="https://mohammed-890.github.io/show-me/"><img src="assets/cards/show-me.png" alt="Show Me"></a>
 <br><b><a href="https://mohammed-890.github.io/show-me/">Live demo</a></b> · <a href="https://github.com/Mohammed-890/show-me">Code</a>
 <br><sub>JavaScript · OCR (Tesseract) · runs fully in the browser</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Mohammed-890/seat-scout"><img src="assets/cards/seat-scout.png" alt="Seat Scout"></a>
 <br><b><a href="https://github.com/Mohammed-890/seat-scout">Code and screenshots</a></b>
 <br><sub>TypeScript · Node.js · Claude API tool use · Three.js · Playwright</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Mohammed-890/football-butterfly-effect"><img src="assets/cards/football.png" alt="Football Butterfly Effect"></a>
 <br><b><a href="https://github.com/Mohammed-890/football-butterfly-effect/blob/main/docs/demo.mp4">51-second demo video</a></b> · <a href="https://github.com/Mohammed-890/football-butterfly-effect">Code</a>
 <br><sub>Python · NumPy · Elo + Poisson model · Monte Carlo · FastAPI</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Mohammed-890/worldcup-data-chat"><img src="assets/cards/worldcup.png" alt="World Cup Data Chat"></a>
 <br><b><a href="https://github.com/Mohammed-890/worldcup-data-chat">Code</a></b>
 <br><sub>Python · SQLite · LLM text-to-SQL · Streamlit</sub>
 </td>
+<td width="50%" valign="top">
+<a href="https://github.com/Mohammed-890/ghost-bus"><img src="assets/cards/ghost-bus.png" alt="Ghost Bus Detector"></a>
+<br><b><a href="https://mohammed-890.github.io/ghost-bus/">Live site</a></b> · <a href="https://github.com/Mohammed-890/ghost-bus">Code</a>
+<br><sub>Python · scikit-learn · MLflow · FastAPI · Kubernetes · Terraform · Argo CD</sub>
+</td>
 </tr>
 </table>
 
 <details>
-<summary><b>How Ghost Bus works</b> (click to open)</summary>
+<summary><b>How Ghost Bus works</b>, with live numbers (click to open)</summary>
 <br>
+
+<!-- ghostbus:start -->
+| Ghost Bus, live from Sheffield | |
+|---|---|
+| Trips judged | **666** |
+| Ghost buses found | **1 (0.1%)** |
+| Last 7 days | **1 of 666 trips never came** |
+| Days collected | **1 (since 1 Nov 2026)** |
+
+<sub>Updated automatically every day from the project's live data · last update 2 Nov 2026</sub>
+<!-- ghostbus:end -->
 
 Every bus in England reports its GPS position to the government's Bus Open Data Service. Ghost Bus compares that with the timetable, trip by trip, to find the buses that never came, then predicts which departures are likely to be missed. A trip only counts as a ghost when the live feed and the operator were reporting reliably.
 
