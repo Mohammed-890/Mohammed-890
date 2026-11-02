@@ -1,0 +1,18 @@
+name: Refresh live stats
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/update_stats.py
+      - name: Commit if changed
+        run: |
+          git config user.name "Mohammed Banabilh"
+          git config user.email "181735426+Mohammed-890@users.noreply.github.com"
+          git diff --quiet || (git commit -am "Refresh live Ghost Bus stats" && git push)

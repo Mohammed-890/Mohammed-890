@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="Mohammed Banabilh. Machine learning and MLOps engineer.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2340"/>
+      <stop offset="1" stop-color="#2b1838"/>
+    </linearGradient>
+    <clipPath id="roles"><rect x="64" y="150" width="760" height="44"/></clipPath>
+  </defs>
+  <rect width="1280" height="300" rx="18" fill="url(#bg)"/>
+
+  <!-- a bus route: stops along a line, a bus travelling it, one stop that never gets a bus -->
+  <g transform="translate(880 0)">
+    <path d="M10 220 C 90 220, 110 120, 190 120 S 300 200, 360 90" fill="none" stroke="#b49cff" stroke-opacity=".35" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+    <circle cx="10" cy="220" r="7" fill="#b49cff"/>
+    <circle cx="190" cy="120" r="7" fill="#b49cff"/>
+    <circle cx="360" cy="90" r="7" fill="#b49cff"/>
+    <circle cx="105" cy="168" r="7" fill="none" stroke="#b49cff" stroke-width="2.5" stroke-dasharray="3 3">
+      <animate attributeName="stroke-opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <g>
+      <rect x="-14" y="-9" width="28" height="18" rx="5" fill="#ffffff"/>
+      <rect x="-9" y="-5" width="7" height="6" rx="1.5" fill="#1d2340"/>
+      <rect x="2" y="-5" width="7" height="6" rx="1.5" fill="#1d2340"/>
+      <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear"
+        path="M10 220 C 90 220, 110 120, 190 120 S 300 200, 360 90"/>
+    </g>
+  </g>
+
+  <text x="64" y="112" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">Mohammed Banabilh</text>
+
+  <g clip-path="url(#roles)" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="600" fill="#b49cff">
+    <g>
+      <text x="64" y="182">Machine learning &amp; MLOps engineer</text>
+      <text x="64" y="226">Arabic &amp; English AI products</text>
+      <text x="64" y="270">Final-year CS with AI · Sheffield Hallam</text>
+      <text x="64" y="314">Machine learning &amp; MLOps engineer</text>
+      <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite" calcMode="discrete"
+        values="0 0;0 -44;0 -88" keyTimes="0;.333;.667"/>
+    </g>
+  </g>
+
+  <text x="64" y="252" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#ffffff" fill-opacity=".72">I build ML systems end to end: data, model, and running it in production.</text>
+</svg>
