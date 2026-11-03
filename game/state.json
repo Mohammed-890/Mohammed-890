@@ -1,20 +1,26 @@
 {
  "puzzle": {
-  "id": "9e8f2a",
-  "day": "2026-11-01",
-  "route": "115",
-  "operator": "First South Yorkshire",
-  "time": "23:38",
-  "from": "Ridgeway/Herringthorpe Valley Road",
-  "to": "Rotherham Interchange/C4",
-  "check": "6f33d0d819fc54ca",
+  "id": "32d7d8",
+  "day": "2026-11-02",
+  "route": "M55",
+  "operator": "SMT Bus and Coach Ltd",
+  "time": "09:50",
+  "from": "Crystal Peaks/CP1",
+  "to": "Crystal Peaks Bus Station",
+  "check": "5ca1f86f5a771a1e",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 1,
-  "judged_that_day": 666
+  "ghosts_that_day": 99,
+  "judged_that_day": 4006
  },
- "previous": null,
+ "previous": {
+  "route": "115",
+  "time": "23:38",
+  "answer": "ghost",
+  "plays": 0,
+  "correct": 0
+ },
  "plays": 0,
  "correct": 0
 }
