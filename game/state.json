@@ -1,22 +1,22 @@
 {
  "puzzle": {
-  "id": "32d7d8",
-  "day": "2026-11-02",
-  "route": "M55",
-  "operator": "SMT Bus and Coach Ltd",
-  "time": "09:50",
-  "from": "Crystal Peaks/CP1",
-  "to": "Crystal Peaks Bus Station",
-  "check": "5ca1f86f5a771a1e",
+  "id": "1ce730",
+  "day": "2026-11-03",
+  "route": "117",
+  "operator": "TM Travel",
+  "time": "13:48",
+  "from": "Fitzwilliam Road/Herringthorpe Valley Road",
+  "to": "Rotherham Interchange/A10",
+  "check": "fcef1823119d4a5f",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 99,
-  "judged_that_day": 4006
+  "ghosts_that_day": 89,
+  "judged_that_day": 4331
  },
  "previous": {
-  "route": "115",
-  "time": "23:38",
+  "route": "M55",
+  "time": "09:50",
   "answer": "ghost",
   "plays": 0,
   "correct": 0
