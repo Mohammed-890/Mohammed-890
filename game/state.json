@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "1ce730",
-  "day": "2026-11-03",
-  "route": "117",
-  "operator": "TM Travel",
-  "time": "13:48",
-  "from": "Fitzwilliam Road/Herringthorpe Valley Road",
-  "to": "Rotherham Interchange/A10",
-  "check": "fcef1823119d4a5f",
+  "id": "f2cdd4",
+  "day": "2026-11-04",
+  "route": "95",
+  "operator": "First South Yorkshire",
+  "time": "15:53",
+  "from": "Tinker Lane/Bole Hill Road",
+  "to": "Rotherham Interchange/A3",
+  "check": "d9fe48a7e4d3125a",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 89,
-  "judged_that_day": 4331
+  "ghosts_that_day": 76,
+  "judged_that_day": 4340
  },
  "previous": {
-  "route": "M55",
-  "time": "09:50",
-  "answer": "ghost",
+  "route": "117",
+  "time": "13:48",
+  "answer": "ran",
   "plays": 0,
   "correct": 0
  },
