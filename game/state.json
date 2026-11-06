@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "f2cdd4",
-  "day": "2026-11-04",
-  "route": "95",
-  "operator": "First South Yorkshire",
-  "time": "15:53",
-  "from": "Tinker Lane/Bole Hill Road",
-  "to": "Rotherham Interchange/A3",
-  "check": "d9fe48a7e4d3125a",
+  "id": "7eecfd",
+  "day": "2026-11-05",
+  "route": "1",
+  "operator": "Stagecoach Yorkshire",
+  "time": "10:25",
+  "from": "Dyche Road/Ormond Road",
+  "to": "Ecclesfield Road/Park Avenue",
+  "check": "6c203120b03ad9ab",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 76,
-  "judged_that_day": 4340
+  "ghosts_that_day": 77,
+  "judged_that_day": 3944
  },
  "previous": {
-  "route": "117",
-  "time": "13:48",
-  "answer": "ran",
+  "route": "95",
+  "time": "15:53",
+  "answer": "ghost",
   "plays": 0,
   "correct": 0
  },
