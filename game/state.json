@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "7eecfd",
-  "day": "2026-11-05",
-  "route": "1",
+  "id": "5aac84",
+  "day": "2026-11-06",
+  "route": "221",
   "operator": "Stagecoach Yorkshire",
-  "time": "10:25",
-  "from": "Dyche Road/Ormond Road",
-  "to": "Ecclesfield Road/Park Avenue",
-  "check": "6c203120b03ad9ab",
+  "time": "17:15",
+  "from": "Rawmarsh Hill/Netherfield Lane",
+  "to": "Rotherham Interchange/C4",
+  "check": "8d0efe09ed37d423",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 77,
-  "judged_that_day": 3944
+  "ghosts_that_day": 118,
+  "judged_that_day": 4344
  },
  "previous": {
-  "route": "95",
-  "time": "15:53",
-  "answer": "ghost",
+  "route": "1",
+  "time": "10:25",
+  "answer": "ran",
   "plays": 0,
   "correct": 0
  },
