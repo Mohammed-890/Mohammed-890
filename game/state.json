@@ -1,22 +1,22 @@
 {
  "puzzle": {
-  "id": "5aac84",
-  "day": "2026-11-06",
-  "route": "221",
-  "operator": "Stagecoach Yorkshire",
-  "time": "17:15",
-  "from": "Rawmarsh Hill/Netherfield Lane",
-  "to": "Rotherham Interchange/C4",
-  "check": "8d0efe09ed37d423",
+  "id": "f28328",
+  "day": "2026-11-07",
+  "route": "X3",
+  "operator": "First South Yorkshire",
+  "time": "05:04",
+  "from": "Rotherham Interchange/A1",
+  "to": "Fitzwilliam Road/Aldwarke Lane",
+  "check": "7dfb7ee0152c921a",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 118,
-  "judged_that_day": 4344
+  "ghosts_that_day": 75,
+  "judged_that_day": 3693
  },
  "previous": {
-  "route": "1",
-  "time": "10:25",
+  "route": "221",
+  "time": "17:15",
   "answer": "ran",
   "plays": 0,
   "correct": 0
