@@ -1,22 +1,22 @@
 {
  "puzzle": {
-  "id": "f28328",
-  "day": "2026-11-07",
-  "route": "X3",
-  "operator": "First South Yorkshire",
-  "time": "05:04",
-  "from": "Rotherham Interchange/A1",
-  "to": "Fitzwilliam Road/Aldwarke Lane",
-  "check": "7dfb7ee0152c921a",
+  "id": "beb1bc",
+  "day": "2026-11-08",
+  "route": "50",
+  "operator": "Stagecoach Yorkshire",
+  "time": "18:55",
+  "from": "Masons Cottages",
+  "to": "Flat Street/Fitzalan Square",
+  "check": "fd108b62f8a087c7",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 75,
-  "judged_that_day": 3693
+  "ghosts_that_day": 44,
+  "judged_that_day": 1799
  },
  "previous": {
-  "route": "221",
-  "time": "17:15",
+  "route": "X3",
+  "time": "05:04",
   "answer": "ran",
   "plays": 0,
   "correct": 0
