@@ -1,22 +1,22 @@
 {
  "puzzle": {
-  "id": "beb1bc",
-  "day": "2026-11-08",
-  "route": "50",
-  "operator": "Stagecoach Yorkshire",
-  "time": "18:55",
-  "from": "Masons Cottages",
-  "to": "Flat Street/Fitzalan Square",
-  "check": "fd108b62f8a087c7",
+  "id": "757957",
+  "day": "2026-11-09",
+  "route": "95",
+  "operator": "First South Yorkshire",
+  "time": "11:25",
+  "from": "Rotherham Interchange/B8",
+  "to": "Tinker Lane/Bole Hill Road",
+  "check": "a0064945439ece9a",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 44,
-  "judged_that_day": 1799
+  "ghosts_that_day": 209,
+  "judged_that_day": 4343
  },
  "previous": {
-  "route": "X3",
-  "time": "05:04",
+  "route": "50",
+  "time": "18:55",
   "answer": "ran",
   "plays": 0,
   "correct": 0
