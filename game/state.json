@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "757957",
-  "day": "2026-11-09",
-  "route": "95",
+  "id": "f80158",
+  "day": "2026-11-10",
+  "route": "115",
   "operator": "First South Yorkshire",
-  "time": "11:25",
-  "from": "Rotherham Interchange/B8",
-  "to": "Tinker Lane/Bole Hill Road",
-  "check": "a0064945439ece9a",
+  "time": "13:46",
+  "from": "Rotherham Interchange/B1",
+  "to": "Laudsdale Road/Lady Oak Road",
+  "check": "dc4d124671eace61",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 209,
-  "judged_that_day": 4343
+  "ghosts_that_day": 286,
+  "judged_that_day": 4330
  },
  "previous": {
-  "route": "50",
-  "time": "18:55",
-  "answer": "ran",
+  "route": "95",
+  "time": "11:25",
+  "answer": "ghost",
   "plays": 0,
   "correct": 0
  },
