@@ -1,22 +1,22 @@
 {
  "puzzle": {
-  "id": "f9fac3",
-  "day": "2026-11-11",
-  "route": "8",
+  "id": "654127",
+  "day": "2026-11-12",
+  "route": "120",
   "operator": "Stagecoach Yorkshire",
-  "time": "09:48",
-  "from": "Rotherham Interchange/A4",
-  "to": "Rotherham Interchange/C4",
-  "check": "ee737063508da904",
+  "time": "00:25",
+  "from": "Fulwood Road/Ranmoor Park Road",
+  "to": "Arundel Gate/AG1",
+  "check": "06ca2765a4a75592",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 263,
+  "ghosts_that_day": 266,
   "judged_that_day": 4340
  },
  "previous": {
-  "route": "115",
-  "time": "13:46",
+  "route": "8",
+  "time": "09:48",
   "answer": "ran",
   "plays": 0,
   "correct": 0
