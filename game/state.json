@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "654127",
-  "day": "2026-11-12",
-  "route": "120",
-  "operator": "Stagecoach Yorkshire",
-  "time": "00:25",
-  "from": "Fulwood Road/Ranmoor Park Road",
-  "to": "Arundel Gate/AG1",
-  "check": "06ca2765a4a75592",
+  "id": "fea08f",
+  "day": "2026-11-13",
+  "route": "47",
+  "operator": "First South Yorkshire",
+  "time": "12:30",
+  "from": "Hartley Brook Road/Butterthwaite Road",
+  "to": "Hartley Brook Road/Butterthwaite Road",
+  "check": "6f38ff10e9331af5",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 266,
-  "judged_that_day": 4340
+  "ghosts_that_day": 314,
+  "judged_that_day": 4335
  },
  "previous": {
-  "route": "8",
-  "time": "09:48",
-  "answer": "ran",
+  "route": "120",
+  "time": "00:25",
+  "answer": "ghost",
   "plays": 0,
   "correct": 0
  },

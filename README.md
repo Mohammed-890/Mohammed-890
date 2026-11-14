@@ -34,16 +34,16 @@ Final-year **Computer Science with AI** student at Sheffield Hallam University (
 
 Every day this asks about a **real departure** from Sheffield, checked by [Ghost Bus Detector](https://github.com/Mohammed-890/ghost-bus) against live GPS.
 
-> **Route 120** (Stagecoach Yorkshire), **00:25** on **Thursday 12 November**
-> from Fulwood Road/Ranmoor Park Road to Arundel Gate/AG1
+> **Route 47** (First South Yorkshire), **12:30** on **Friday 13 November**
+> from Hartley Brook Road/Butterthwaite Road to Hartley Brook Road/Butterthwaite Road
 
 Did a bus actually run it?
 
-<p align="left"><a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3A654127%3Aran&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20ran-1aa38c?style=for-the-badge" alt="It ran"></a> &nbsp; <a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3A654127%3Aghost&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20never%20came-7b5cff?style=for-the-badge" alt="It never came"></a></p>
+<p align="left"><a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3Afea08f%3Aran&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20ran-1aa38c?style=for-the-badge" alt="It ran"></a> &nbsp; <a href="https://github.com/Mohammed-890/Mohammed-890/issues/new?title=ghostbus%3Afea08f%3Aghost&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A.%20A%20bot%20replies%20with%20the%20real%20answer%20in%20about%20a%20minute%2C%20adds%20you%20to%20the%20scoreboard%20and%20closes%20this%20issue."><img src="https://img.shields.io/badge/It%20never%20came-7b5cff?style=for-the-badge" alt="It never came"></a></p>
 
 <sub>0 guesses today · 0 guesses in total</sub>
 
-<sub>Yesterday's bus (route 8 at 09:48): **it ran**. 0 of 0 guessed right.</sub>
+<sub>Yesterday's bus (route 120 at 00:25): **it never came**. 0 of 0 guessed right.</sub>
 <!-- game:end -->
 
 <img src="assets/arcade/inventory.svg" width="100%" alt="Tools: Python, scikit-learn, pandas, MLflow, FastAPI, Docker, Kubernetes, Helm, Terraform, Argo CD, Prometheus, GitHub Actions, TypeScript, SQL, Java, Three.js">
