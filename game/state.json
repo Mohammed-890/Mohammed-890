@@ -1,23 +1,23 @@
 {
  "puzzle": {
-  "id": "fea08f",
-  "day": "2026-11-13",
-  "route": "47",
-  "operator": "First South Yorkshire",
-  "time": "12:30",
-  "from": "Hartley Brook Road/Butterthwaite Road",
-  "to": "Hartley Brook Road/Butterthwaite Road",
-  "check": "6f38ff10e9331af5",
+  "id": "8257cc",
+  "day": "2026-11-14",
+  "route": "137",
+  "operator": "Stagecoach Yorkshire",
+  "time": "18:00",
+  "from": "Sheffield Interchange/C3",
+  "to": "Rotherham Interchange/B4",
+  "check": "c02def69c748d2f2",
   "answer": null,
   "plays": 0,
   "correct": 0,
-  "ghosts_that_day": 314,
-  "judged_that_day": 4335
+  "ghosts_that_day": 223,
+  "judged_that_day": 3694
  },
  "previous": {
-  "route": "120",
-  "time": "00:25",
-  "answer": "ghost",
+  "route": "47",
+  "time": "12:30",
+  "answer": "ran",
   "plays": 0,
   "correct": 0
  },
