@@ -5,6 +5,7 @@
 import os
 import random
 
+from hero import hero
 from pixel import CYAN, GOLD, INK, PINK, SANS, SHELL, SOFT, blink, crt, svg
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "arcade")
@@ -19,61 +20,6 @@ def bus(color, w=120, h=46):
             f'<rect x="6" y="26" width="{w - 30}" height="4" fill="#000" fill-opacity=".18"/>'
             f'<rect x="16" y="{h - 14}" width="16" height="14" rx="3" fill="#120826"/>'
             f'<rect x="{w - 40}" y="{h - 14}" width="16" height="14" rx="3" fill="#120826"/>')
-
-
-# ---------------------------------------------------------------- attract screen
-def hero():
-    W, H = 1280, 560
-    rnd = random.Random(7)
-    stars = "".join(
-        f'<rect x="{rnd.randrange(W)}" y="{rnd.randrange(330)}" width="{s}" height="{s}" fill="#fff" opacity="{rnd.uniform(.3, .9):.2f}">'
-        + (f'<animate attributeName="opacity" values=".9;.1;.9" dur="{rnd.uniform(1.5, 4):.1f}s" repeatCount="indefinite"/>' if rnd.random() < .3 else "")
-        + "</rect>"
-        for s in (rnd.choice((2, 2, 3, 4)) for _ in range(90)))
-    # skyline
-    x, city = 0, []
-    while x < W:
-        bw, bh = rnd.randrange(50, 120), rnd.randrange(40, 115)
-        top = 470 - bh
-        city.append(f'<rect x="{x}" y="{top}" width="{bw}" height="{bh}" fill="#1d0d3d"/>')
-        for wy in range(top + 12, 455, 18):
-            for wx in range(x + 8, x + bw - 10, 16):
-                r = rnd.random()
-                if r < .28:
-                    anim = (f'<animate attributeName="opacity" values="1;1;0;1" keyTimes="0;.7;.71;1" dur="{rnd.uniform(3, 9):.1f}s" repeatCount="indefinite"/>'
-                            if r < .05 else "")
-                    city.append(f'<rect x="{wx}" y="{wy}" width="8" height="8" fill="{rnd.choice((GOLD, GOLD, "#ffb35c", CYAN))}" opacity=".85">{anim}</rect>')
-        x += bw + rnd.randrange(0, 8)
-    title = []
-    for y, word in ((178, "MOHAMMED"), (272, "BANABILH")):
-        for dx, col, extra in ((-4, CYAN, "0 0;-3 0;2 0;0 0;0 0;5 0;0 0"), (4, PINK, "0 0;3 0;-2 0;0 0;0 0;-5 0;0 0")):
-            title.append(f'<text x="{640 + dx}" y="{y}" class="p" font-size="76" text-anchor="middle" fill="{col}" opacity=".8">{word}'
-                         f'<animateTransform attributeName="transform" type="translate" values="{extra}" dur="2.3s" calcMode="discrete" repeatCount="indefinite"/></text>')
-        title.append(f'<text x="640" y="{y}" class="p" font-size="76" text-anchor="middle" fill="#fff">{word}</text>')
-    body = f'''<rect width="{W}" height="{H}" fill="#170a35"/>
-<rect width="{W}" height="{H}" fill="url(#sky)"/>
-<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12082c"/><stop offset=".55" stop-color="#2c0f52"/><stop offset=".8" stop-color="#5a1663"/></linearGradient></defs>
-{stars}
-<circle cx="1100" cy="110" r="46" fill="#ffd6f0" opacity=".9"/><circle cx="1084" cy="98" r="10" fill="#f0b5d8"/><circle cx="1112" cy="128" r="7" fill="#f0b5d8"/>
-{''.join(city)}
-<rect y="470" width="{W}" height="90" fill="#0f0624"/>
-<g fill="{GOLD}" opacity=".7"><g><animateTransform attributeName="transform" type="translate" from="0 0" to="-80 0" dur=".9s" repeatCount="indefinite"/>
-{''.join(f'<rect x="{i * 80}" y="513" width="40" height="5"/>' for i in range(18))}</g></g>
-<g><g transform="translate(0 474)">{bus(GOLD)}</g><animateTransform attributeName="transform" type="translate" values="-140 0;1300 0" dur="9s" repeatCount="indefinite"/></g>
-<g opacity=".9"><g transform="translate(0 512) scale(-1 1) translate(-120 0)">{bus("#b49cff")}</g>
-  <animateTransform attributeName="transform" type="translate" values="1300 0;-140 0" dur="11s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values=".9;.9;.15;.6;.05;.9" keyTimes="0;.35;.42;.47;.55;1" dur="11s" repeatCount="indefinite"/></g>
-<g class="p" font-size="18">
-  <text x="48" y="48" fill="{PINK}">1UP<tspan x="48" y="76" fill="#fff">PLAYER 1</tspan></text>
-  <text x="640" y="48" fill="{PINK}" text-anchor="middle">HI-SCORE<tspan x="640" y="76" fill="#fff">6 GAMES SHIPPED</tspan></text>
-  <text x="1232" y="48" fill="{PINK}" text-anchor="end">CREDIT<tspan x="1232" y="76" fill="#fff">00</tspan></text>
-</g>
-{''.join(title)}
-<text x="640" y="328" class="p" font-size="18" text-anchor="middle" fill="{CYAN}">AI + MACHINE LEARNING ENGINEER</text>
-<text x="640" y="362" class="s" font-size="19" font-weight="600" text-anchor="middle" fill="{SOFT}">I build AI that works in Arabic and English, then run it in production.</text>
-<text x="640" y="414" class="p" font-size="22" text-anchor="middle" fill="{GOLD}">INSERT COIN{blink()}</text>
-{crt(W, H)}'''
-    return svg(W, H, body, "Mohammed Banabilh, AI and machine learning engineer. Arcade-style title screen.")
 
 
 # ---------------------------------------------------------------- cartridges

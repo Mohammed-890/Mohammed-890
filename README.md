@@ -8,6 +8,8 @@
 
 Final-year **Computer Science with AI** student at Sheffield Hallam University (graduating 2027). I build machine learning systems end to end, from collecting the data to running the model in production with monitoring and automatic retraining, and I build AI tools that work in **Arabic and English**.
 
+<a href="https://github.com/Mohammed-890?tab=repositories"><img src="assets/player.svg" width="100%" alt="Player card: level, contributions, streaks and languages, updated from my real GitHub activity"></a>
+
 ## Select a game
 
 <sub>Every cartridge is a real project. Click one to play the demo or read the code.</sub>
@@ -26,6 +28,8 @@ Final-year **Computer Science with AI** student at Sheffield Hallam University (
 <td width="50%"><a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/arcade/ghost-bus.svg" width="100%" alt="Ghost Bus Detector: live site"></a></td>
 </tr>
 </table>
+
+<img src="assets/year.svg" width="100%" alt="My last year on GitHub drawn as a bus route: every day is a stop, and the bus picks them all up while ghost buses chase it">
 
 <a href="https://mohammed-890.github.io/ghost-bus/"><img src="assets/ghostbus-live.svg" width="100%" alt="Ghost Bus Detector live high scores"></a>
 
