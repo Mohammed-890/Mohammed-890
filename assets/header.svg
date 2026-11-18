@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b26"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.45" stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1280" height="300" rx="16" fill="url(#grid)"/>
+  <rect width="1280" height="300" rx="16" fill="url(#fade)"/>
+
+  <g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="64" y="86" font-size="15" font-weight="600" letter-spacing="2.4" fill="#8b9cff">MACHINE LEARNING ENGINEER  ·  MLOPS  ·  ARABIC NLP</text>
+    <text x="62" y="160" font-size="62" font-weight="800" letter-spacing="-1.5" fill="#f5f7fa">Mohammed Banabilh</text>
+    <text x="64" y="206" font-size="21" fill="#a3acb9">I build ML systems end to end: data, models, deployment and monitoring.</text>
+    <line x1="64" y1="238" x2="560" y2="238" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="64" y="266" font-size="15" fill="#6e7781">BSc Computer Science with AI  ·  Sheffield Hallam University  ·  Class of 2027</text>
+  </g>
+
+  <!-- abstract model graph, right side -->
+  <g stroke="#8b9cff" stroke-opacity="0.22" stroke-width="1.2" fill="none">
+    <path d="M1000 80 L1090 130 L1180 90 M1000 80 L1090 190 L1180 90 M1000 150 L1090 130 L1180 210 M1000 150 L1090 190 M1000 220 L1090 190 L1180 210 M1000 220 L1090 130 M1090 130 L1180 210 M1090 190 L1180 90"/>
+  </g>
+  <g fill="#0d1117" stroke="#8b9cff" stroke-width="2">
+    <circle cx="1000" cy="80" r="7"/><circle cx="1000" cy="150" r="7"/><circle cx="1000" cy="220" r="7"/>
+    <circle cx="1090" cy="130" r="7"/><circle cx="1090" cy="190" r="7"/>
+  </g>
+  <circle cx="1180" cy="90" r="7" fill="#8b9cff"/>
+  <circle cx="1180" cy="210" r="7" fill="#0d1117" stroke="#8b9cff" stroke-width="2"/>
+</svg>
